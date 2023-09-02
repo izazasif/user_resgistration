@@ -165,6 +165,19 @@ class HomeController extends Controller
         $user = Profile_info::where('user_id',$id)->first();
         if($user){
             $user->full_name = $request->full_name;
+        if($request->image !== null) 
+        {
+            $profile_picture = date('YmdHis') . "_" . mt_rand(1, 999999) . "." . $request->file('image')->getClientOriginalExtension();
+ 
+            $pdf_path = $request->file('image')->move('app/user', $profile_picture);
+            
+            $profile_picture =  'user'.'/'.$profile_picture;
+        }
+        else {
+            $profile_picture = $request->image_previous;
+        }
+ 
+            $user->image = $profile_picture;
             $user->goals = $request->goals;
             $user->height = $request->height;
             $user->weight = $request->weight;

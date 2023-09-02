@@ -37,7 +37,7 @@
                 <div class="col-md-12">
                 <div class="form-group">
                     <div class="box-footer" style="text-align: right;">
-                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-default" data-user-id="">Upload Image</button>
+                    <!-- <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-default" data-user-id="">Upload Image</button> -->
                     <a class="btn btn-primary" href="{{ url('/generate-pdf/' . $data->user_id) }}">Generate PDF</a>              
                     </div>
                 </div>  
@@ -60,7 +60,20 @@
                                 @csrf
                                 <input type="hidden" name="user_id" value="{{$data->user_id}}">
                                 <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="image" class="required">Upload Image</label>
+                                    <input type="file" name="image" class="form-control" id="image">
+                                    @if ($errors->has('image'))
+                                        <span class="text-danger">{{ $errors->first('image') }}</span>
+                                    @endif
+                                </div>
 
+                                <div id="selectedFileName">
+                                    @if (!empty($data->image))
+                                        <input type="hidden" name="image_previous" value="{{$data->image}}">
+                                        <img id="previewImage" class="brand" src="{{ asset('/app/' . $data->image) }}" style="height: 70px;" alt="bootstraper logo">
+                                    @endif
+                                </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1" class="required">  Full Name </label>
                                     <input type="text" name="full_name" class="form-control" id="exampleInputEmail1"
@@ -100,7 +113,7 @@
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Date Of Birth</label>
                                     <input type="date" class="form-control" name="dob" id="exampleInputEmail1"
-                                        >
+                                    value="{{ $data->dob }}" >
                                 </div> 
 
                                 <div class="form-group">
@@ -314,6 +327,30 @@
         // submit the form    
         btn.form.submit();
     }
+    document.getElementById('image').addEventListener('change', function () {
+        const selectedFile = this.files[0];
+        const previewImageElement = document.getElementById('previewImage');
+
+        if (selectedFile) {
+            // Create a new image element to replace the previous one
+            const newImageElement = document.createElement('img');
+            newImageElement.id = 'previewImage';
+            newImageElement.className = 'brand';
+            newImageElement.style.height = '70px';
+            newImageElement.alt = 'bootstraper logo';
+
+            // Display the new image element
+            const parentElement = previewImageElement.parentElement;
+            parentElement.replaceChild(newImageElement, previewImageElement);
+
+            // Set the image source for the new element
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                newImageElement.src = e.target.result;
+            };
+            reader.readAsDataURL(selectedFile);
+        }
+    });
     // When user selects a user type
    
    
