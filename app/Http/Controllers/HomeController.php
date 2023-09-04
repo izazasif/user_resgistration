@@ -67,19 +67,19 @@ class HomeController extends Controller
     {
         $this->validate($request, [
             
-            'name' => 'required',
+            // 'name' => 'required',
             'email' => 'required|unique:users|email',
-            'password' => 'required',
+            'password' => 'required|confirmed',
         ]
     ); 
         $data = new User();
-        $data->name = $request->name;
+        $data->name = 1;
         $data->email = $request->email;
         $data->password = Hash::make($request->password);
         $data->save();
 
         $message = 'Registration has been added in this system.';
-        return redirect()->route('register')->with('message', $message);
+        return redirect()->route('home')->with('message', $message);
     }
     /**
      * Store a newly created resource in storage.

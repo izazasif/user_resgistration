@@ -33,14 +33,14 @@
                     <div class="card-body">
                         <form method="POST" action="{{ route('register_save') }}">
                             @csrf
-
+<!-- 
                             <div class="mb-3">
                                 <label for="name" class="form-label">{{ __('Username') }}</label>
                                 <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name') }}" required autofocus>
                                 @error('name')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
-                            </div>
+                            </div> -->
 
                             <div class="mb-3">
                                 <label for="email" class="form-label">{{ __('E-Mail Address') }}</label>
@@ -59,7 +59,7 @@
 
                             <div class="mb-3">
                                 <label for="password_confirmation" class="form-label">{{ __('Confirm Password') }}</label>
-                                <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" required>
+                                <input type="password" id="password_confirmation" name="password_confirmation" class="form-control" required>
                             </div>
 
                             <button type="submit" class="btn btn-primary">{{ __('Register') }}</button>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Profile Information</title>
+    <title>PROFILE INFORMATION</title>
 </head>
 <body>
     <table>
@@ -25,17 +25,17 @@
             
             <div class="row">
             <div class="col-md-4" style="margin-top:-110px;">
-            <h1>Profile Information</h1>
+            <h1>PROFILE INFORMATION</h1>
                     <!-- Add your image here -->
-                    <p><strong>Full Name: </strong>&nbsp; &nbsp;{{ $profile->full_name }}</p>
-                    <p><strong>Goals: </strong>&nbsp; &nbsp;{{ $profile->goals }}</p>
-                    <p><strong>Height:</strong>&nbsp; &nbsp;{{ $profile->height }}</p>
-                    <p><strong>Weight:</strong>&nbsp; &nbsp;{{ $profile->weight }}</p>
+                    <p><strong>FULL NAME: </strong>&nbsp; &nbsp;{{ $profile->full_name }}</p>
+                    <p><strong>GOALS: </strong>&nbsp; &nbsp;{{ $profile->goals }}</p>
+                    <p><strong>HEIGHT:</strong>&nbsp; &nbsp;{{ $profile->height }}</p>
+                    <p><strong>WEIGHT:</strong>&nbsp; &nbsp;{{ $profile->weight }}</p>
                     <p><strong>DOB:</strong> &nbsp;&nbsp; {{ Carbon\Carbon::parse($profile->dob)->format('j- M-Y') }} </p>
-                    <p><strong>Address:</strong>&nbsp; &nbsp;{{ $profile->address }}</p>
-                    <p><strong>Email:</strong>&nbsp; &nbsp;{{ $profile->email }}</p>
-                    <p><strong>phone :</strong>&nbsp; &nbsp;{{ $profile->phone_number }}</p>
-                    <p><strong>Parents:</strong>&nbsp; &nbsp;{{ $profile->parents }}</p>
+                    <p><strong>ADDRESS:</strong>&nbsp; &nbsp;{{ $profile->address }}</p>
+                    <p><strong>EMAIL:</strong>&nbsp; &nbsp;{{ $profile->email }}</p>
+                    <p><strong>PHONE :</strong>&nbsp; &nbsp;{{ $profile->phone_number }}</p>
+                    <p><strong>PARENTS:</strong>&nbsp; &nbsp;{{ $profile->parents }}</p>
                 </div>
             </div>    
             </td>
@@ -52,21 +52,21 @@
         <tr>
             <td>
             <div class="col-md-6">
-            <h2>Academics</h2>
-            <p><strong>High School: </strong>&nbsp; &nbsp;{{ $profile->h_school }}</p>
+            <h2>ACADEMICS</h2>
+            <p><strong>HIGH SCHOOL: </strong>&nbsp; &nbsp;{{ $profile->h_school }}</p>
             <p><strong>GPA: </strong>&nbsp; &nbsp;{{ $profile->gpa }}</p>
-            <p><strong>Act:</strong>&nbsp; &nbsp;{{ $profile->act }}</p>
-            <p><strong>Major:</strong>&nbsp; &nbsp;{{ $profile->major }}</p>
-            <p><strong>Achievements: </strong>&nbsp; &nbsp;{{ $profile->achievements }}</p>
+            <p><strong>ACT:</strong>&nbsp; &nbsp;{{ $profile->act }}</p>
+            <p><strong>MAJOR:</strong>&nbsp; &nbsp;{{ $profile->major }}</p>
+            <p><strong>ACHIEVEMENTS: </strong>&nbsp; &nbsp;{{ $profile->achievements }}</p>
             </td>
             <td>
-            <h2>Athletics</h2>
-            <p><strong>Club: </strong>&nbsp; &nbsp;{{ $profile->club }}</p>
-            <p><strong>Position: </strong>&nbsp; &nbsp;{{ $profile->position }}</p>
-            <p><strong>club achievements:</strong>&nbsp; &nbsp;{{ $profile->c_achievements }}</p>
-            <p><strong>Footage :</strong>&nbsp; &nbsp;{{ $profile->footage }}</p>
-            <p><strong>High School Contact:</strong>&nbsp; &nbsp;{{ $profile->h_contact }}</p>
-            <p><strong>Aditional Information:</strong>&nbsp; &nbsp;{{ $profile->additional_information }}</p>
+            <h2>ATHLETICS</h2>
+            <p><strong>CLUB: </strong>&nbsp; &nbsp;{{ $profile->club }}</p>
+            <p><strong>POSITION: </strong>&nbsp; &nbsp;{{ $profile->position }}</p>
+            <p><strong>CLUB ACHIEVEMENTS:</strong>&nbsp; &nbsp;{{ $profile->c_achievements }}</p>
+            <p><strong>FOOTAGE :</strong>&nbsp; &nbsp;{{ $profile->footage }}</p>
+            <p><strong>HIGHR SCHOOL CONTACTS:</strong>&nbsp; &nbsp;{{ $profile->h_contact }}</p>
+            <p><strong>ADITIONAL INFORMATION:</strong>&nbsp; &nbsp;{{ $profile->additional_information }}</p>
             </td>
         </tr>
     </table>
