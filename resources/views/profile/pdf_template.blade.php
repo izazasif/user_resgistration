@@ -19,6 +19,8 @@
             </td>
         </tr>
     </table>
+    <br>
+    <br>
     <table>
         <tr>
             <td>
@@ -47,12 +49,13 @@
             </td>
         </tr>
     </table>
-
+    <br>
     <table>
         <tr>
             <td>
             <div class="col-md-6">
-            <h2>ACADEMICS</h2>
+            <h2 style="margin-left:70px;">ACADEMICS</h2>
+            <br>
             <p><strong>HIGH SCHOOL: </strong>&nbsp; &nbsp;{{ $profile->h_school }}</p>
             <p><strong>GPA: </strong>&nbsp; &nbsp;{{ $profile->gpa }}</p>
             <p><strong>ACT:</strong>&nbsp; &nbsp;{{ $profile->act }}</p>
@@ -60,7 +63,9 @@
             <p><strong>ACHIEVEMENTS: </strong>&nbsp; &nbsp;{{ $profile->achievements }}</p>
             </td>
             <td>
-            <h2>ATHLETICS</h2>
+                
+            <h2 style="margin-left:90px;">ATHLETICS</h2>
+            <br>
             <p><strong>CLUB: </strong>&nbsp; &nbsp;{{ $profile->club }}</p>
             <p><strong>POSITION: </strong>&nbsp; &nbsp;{{ $profile->position }}</p>
             <p><strong>CLUB ACHIEVEMENTS:</strong>&nbsp; &nbsp;{{ $profile->c_achievements }}</p>
