@@ -28,7 +28,7 @@
                 <!-- The user image in the navbar-->
                 <img class="brand" src="{{ asset('user2.png') }}" style="height:70px;" alt="bootstraper logo">
                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                <span class="hidden-xs">{{Auth::user()->name}}</span>
+                <!-- <span class="hidden-xs">{{Auth::user()->name}}</span> -->
               </a>
               <ul class="dropdown-menu">
                 <!-- The user image in the menu -->
@@ -36,16 +36,16 @@
                 <img class="brand" src="{{ asset('user2.png') }}" style="height:70px;" alt="bootstraper logo">
 
                   <p>
-                    {{Auth::user()->name}}
+                    <!-- {{Auth::user()->name}} -->
                     <!-- <small>Member since Nov. 2012</small> -->
                   </p>
                 </li>
              
                 <!-- Menu Footer-->
                 <li class="user-footer">
-                  <div class="pull-left">
+                  <!-- <div class="pull-left">
                     <a href="#" class="btn btn-default btn-flat">Profile</a>
-                  </div>
+                  </div> -->
                   <div class="pull-right">
                     <a href="/logout" class="btn btn-default btn-flat">Sign out</a>
                   </div>
