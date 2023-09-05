@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignId('user_id');
             $table->text('goals')->nullable();
             $table->string('height')->nullable();
-            $table->float('weight')->nullable();
+            $table->string('weight')->nullable();
             $table->date('dob')->nullable();
             $table->text('address')->nullable();
             $table->string('phone_number')->nullable();
