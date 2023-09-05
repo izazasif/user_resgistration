@@ -92,6 +92,12 @@ class HomeController extends Controller
     public function store(Request $request)
     {   
         $id = Auth::user()->id;
+
+        $this->validate($request, [
+            
+            'image' => 'required',
+        ]
+    ); 
        
         $data = new Profile_info();
 
