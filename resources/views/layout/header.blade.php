@@ -51,7 +51,7 @@
             </li>
           </ul>
         </div>
-        <div class="pull-right" style="margin-top: 17px;">
+        <div class="pull-right right1">
                     <a href="/logout" class="btn btn-default btn-flat">Sign out</a>
         </div>
         <!-- /.navbar-custom-menu -->

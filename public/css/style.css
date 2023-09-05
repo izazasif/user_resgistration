@@ -1,0 +1,11 @@
+   /* Default CSS for the .right1 class */
+   .right1 {
+    margin-top: 17px;
+}
+
+/* Media query for screens with a maximum width of 772px */
+@media screen and (max-width: 772px) {
+    .right1 {
+        margin-top: -31px;
+    }
+}
