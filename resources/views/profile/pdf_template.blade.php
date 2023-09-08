@@ -20,7 +20,7 @@
             <p style="margin-top: -10px;font-size: 18px;width:80px;font-weight: bold;">
             farward
             </p>
-            <p style="margin-top: -5px;width:150px;font-size: 18px;font-weight: bold;">
+            <p style="margin-top: -14px;width:150px;font-size: 18px;font-weight: bold;">
             Jersey #9 & #27
             </p>
         </td>
@@ -33,13 +33,13 @@
     </tr>
     </table>
     <h4 style="margin-top: -29px; color: red;margin-left:200px;">
-                <span style="margin-top: -29px;margin-left:90px; border-bottom: 3px solid black; display: inline-block;">Personal</span>
+                <span style="margin-top: -35px;margin-left:90px; border-bottom: 3px solid black; display: inline-block;">Personal</span>
     </h4>
     <table style="margin-top:-40px;">
         <tr>
             <td>
                     <p style="padding-left: 20px;font-size: 12px;width:80px;font-weight: bold;margin-top:-50px;color:red;">FULL NAME: </p>
-                    <p style="padding-left: 20px;font-size: 12px;font-weight: bold; position: relative; top: -18px;color:red;">GOALS: </p>
+                    <p style="padding-left: 20px;font-size: 12px;font-weight: bold; position: relative; top: -15px;color:red;">GOALS: </p>
                     <p style="padding-left: 20px;font-size: 12px;font-weight: bold;position: relative; top: 15px;color:red;">HEIGHT:</p>
                     <p style="padding-left: 20px;font-size: 12px;font-weight: bold;position: relative; top: 25px;color:red;">WEIGHT:</p>
                     <p style="padding-left: 20px;font-size: 12px;font-weight: bold;position: relative; top: 33px;color:red;">DOB:</p>
@@ -80,7 +80,7 @@
             <td style="padding-left: 20px;">
                 
             <h2 style="margin-top: 5px; color: red;">
-                <span style="margin-left:90px;border-bottom: 3px solid black; display: inline-block;">ACADEMICS</span>
+                <span style="margin-left:90px;border-bottom: 3px solid black; display: inline-block;">ATHLETICS</span>
             </h2>
                
                 <p><strong style="font-size: 12px;font-weight: bold;color:red;">CLUB: </strong>&nbsp; &nbsp;{{ $profile->club }}</p>
