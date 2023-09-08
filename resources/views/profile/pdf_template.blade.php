@@ -35,60 +35,93 @@
     <h4 style="margin-top: -29px; color: red;margin-left:200px;">
                 <span style="margin-top: -35px;margin-left:90px; border-bottom: 3px solid black; display: inline-block;">Personal</span>
     </h4>
-    <table style="margin-top:-40px;">
-        <tr>
-            <td>
-                    <p style="padding-left: 20px;font-size: 12px;width:80px;font-weight: bold;margin-top:-50px;color:red;">FULL NAME: </p>
-                    <p style="padding-left: 20px;font-size: 12px;font-weight: bold; position: relative; top: -15px;color:red;">GOALS: </p>
-                    <p style="padding-left: 20px;font-size: 12px;font-weight: bold;position: relative; top: 15px;color:red;">HEIGHT:</p>
-                    <p style="padding-left: 20px;font-size: 12px;font-weight: bold;position: relative; top: 25px;color:red;">WEIGHT:</p>
-                    <p style="padding-left: 20px;font-size: 12px;font-weight: bold;position: relative; top: 33px;color:red;">DOB:</p>
-                    <p style="padding-left: 20px;font-size: 12px;font-weight: bold;position: relative; top: 40px;color:red;">ADDRESS:</p>
-                    <p style="padding-left: 20px;font-size: 12px;font-weight: bold;position: relative; top: 48px;color:red;">EMAIL:</p>
-                    <p style="padding-left: 20px;font-size: 12px;font-weight: bold;position: relative; top: 57px;color:red;">PHONE :</p>
-                    <p style="padding-left: 20px;font-size: 12px;font-weight: bold;position: relative; top: 65px;color:red;">PARENTS:</p>
-            </td>
-            <td>
-                    <p style="padding-left: 80px;">{{ $profile->full_name }} </p>
-                    <p style="padding-left: 80px;">{{ $profile->goals }} </p>
-                    <p style="padding-left: 80px;">{{ $profile->height }}</p>
-                    <p style="padding-left: 80px;">{{ $profile->weight }}</strong></p>
-                    <p style="padding-left: 80px;">{{ Carbon\Carbon::parse($profile->dob)->format('j- M-Y') }}</p>
-                    <p style="padding-left: 80px;">{{ $profile->address }}</p>
-                    <p style="padding-left: 80px;text-decoration: underline;">{{ $profile->email }}</p>
-                    <p style="padding-left: 80px;">{{ $profile->phone_number }}</p>
-                    <p style="padding-left: 80px;">{{ $profile->parents }}</p>
-            </td>
-            <td>
-            
-            </td>
-        </tr>
-    </table>
+    <table style="margin-top:-20px;">
+    <tr>
+        <td>
+            <p style="padding-left: 20px;font-size: 12px;width:80px;font-weight: bold;position: relative; top: -27px;margin: 2;color:red;">FULL NAME: </p>
+            <p style="padding-left: 20px;font-size: 12px;font-weight: bold; position: relative; top: -20px;margin: 2;color:red;">GOALS: </p>
+            <p style="padding-left: 20px;font-size: 12px;font-weight: bold;position: relative; top: 1px;margin: 2;color:red;">HEIGHT:</p>
+            <p style="padding-left: 20px;font-size: 12px;font-weight: bold;position: relative; top: 7px;margin: 2;color:red;">WEIGHT:</p>
+            <p style="padding-left: 20px;font-size: 12px;font-weight: bold;position: relative; top: 15px;margin: 2;color:red;">DOB:</p>
+            <p style="padding-left: 20px;font-size: 12px;font-weight: bold;position: relative; top: 20px;margin: 2;color:red;">ADDRESS:</p>
+            <p style="padding-left: 20px;font-size: 12px;font-weight: bold;position: relative; top: 25px;margin: 2;color:red;">EMAIL:</p>
+            <p style="padding-left: 20px;font-size: 12px;font-weight: bold;position: relative; top: 30px;margin: 2;color:red;">PHONE :</p>
+            <p style="padding-left: 20px;font-size: 12px;font-weight: bold;position: relative; top: 32px;margin: 2;color:red;">PARENTS:</p>
+        </td>
+        <td>
+            <p style="padding-left: 80px;margin: 2;position: relative; top: 10px;">{{ $profile->full_name }} </p>
+            <p style="padding-left: 80px;margin: 2;position: relative; top: 12px;">{{ $profile->goals }} </p>
+            <p style="padding-left: 80px;margin: 2;position: relative; top: 10px;">{{ $profile->height }}</p>
+            <p style="padding-left: 80px;margin: 2;position: relative; top: 14px;">{{ $profile->weight }}</p>
+            <p style="padding-left: 80px;margin: 2;position: relative; top: 16px;">{{ Carbon\Carbon::parse($profile->dob)->format('j- M-Y') }}</p>
+            <p style="padding-left: 80px;margin: 2;position: relative; top: 14px;">{{ $profile->address }}</p>
+            <p style="padding-left: 80px;text-decoration: underline;margin: 2;position: relative; top: 10px;">{{ $profile->email }}</p>
+            <p style="padding-left: 80px;margin: 2;position: relative; top: 12px;">{{ $profile->phone_number }}</p>
+            <p style="padding-left: 80px;margin: 2;position: relative; top: 10px;">{!! str_replace(',', '<br>', $profile->parents) !!}</p>
+        </td>
+    </tr>
+</table>
     <table>
         <tr>
             <td>
             <div class="col-md-6">
-            <h2 style="margin-top: -19px; color: red;">
+            <h2 style="margin-top: 20px; color: red;font-size: 16px;font-weight: bold;">
                 <span style="margin-left:90px; border-bottom: 3px solid black; display: inline-block;">ACADEMICS</span>
             </h2>
-            <p style="padding-left: 20px;"><strong style="font-size: 12px;font-weight: bold;color:red;">  HIGH SCHOOL:</strong>&nbsp; &nbsp;{{ $profile->h_school }}</p>
+            <!-- <p style="padding-left: 20px;"><strong style="font-size: 12px;font-weight: bold;color:red;">  HIGH SCHOOL:</strong>&nbsp; &nbsp;{{ $profile->h_school }}</p>
             <p style="padding-left: 20px;"><strong style="font-size: 12px;font-weight: bold;color:red; ">GPA: </strong>&nbsp; &nbsp;{{ $profile->gpa }}</p>
             <p style="padding-left: 20px;"><strong style="font-size: 12px;font-weight: bold;color:red; ">ACT:</strong>&nbsp; &nbsp;{{ $profile->act }}</p>
             <p style="padding-left: 20px;"><strong style="font-size: 12px;font-weight: bold;color:red; ">MAJOR:</strong>&nbsp; &nbsp;{{ $profile->major }}</p>
-            <p style="padding-left: 20px;"><strong style="font-size: 12px;font-weight: bold;color:red; ">ACHIEVEMENTS: </strong>&nbsp; &nbsp;{{ $profile->achievements }}</p>
+            <p style="padding-left: 20px;"><strong style="font-size: 12px;font-weight: bold;color:red; ">ACHIEVEMENTS: </strong>&nbsp; &nbsp;{{ $profile->achievements }}</p> -->
+            <table>
+                <tr>
+                    <td> 
+                        <p style="position: relative; top: -100px;padding-left: 20px;font-size: 12px;font-weight: bold;color:red;">  HIGH SCHOOL:</p>
+                        <p style="position: relative; top: -65px;padding-left: 20px;font-size: 12px;font-weight: bold;color:red;">GPA: </p>
+                        <p style="position: relative; top: -55px;padding-left: 20px;font-size: 12px;font-weight: bold;color:red;">ACT:</p>
+                        <p style="position: relative; top: -45px;padding-left: 20px;font-size: 12px;font-weight: bold;color:red;">MAJOR:</p>
+                        <p style="position: relative; top: -35px;padding-left: 20px;font-size: 12px;font-weight: bold;color:red;">ACHIEVEMENTS: </p>
+                    </td>
+                    <td>
+                        <p style="padding-left: 10px;">{{ $profile->h_school }}</p>
+                        <p style="padding-left: 10px;">{{ $profile->gpa }}</p>
+                        <p style="padding-left: 10px;">{{ $profile->act }}</p>
+                        <p style="padding-left: 10px;">{{ $profile->major }}</p>
+                        <p style="padding-left: 10px;">{{ $profile->achievements }}</p>
+                    </td>
+                </tr>
+            </table>
             </td>
             <td style="padding-left: 20px;">
                 
-            <h2 style="margin-top: 5px; color: red;">
+            <h2 style="margin-top: -55px; color: red;font-size: 16px;font-weight: bold;">
                 <span style="margin-left:90px;border-bottom: 3px solid black; display: inline-block;">ATHLETICS</span>
             </h2>
                
-                <p><strong style="font-size: 12px;font-weight: bold;color:red;">CLUB: </strong>&nbsp; &nbsp;{{ $profile->club }}</p>
+                <!-- <p><strong style="font-size: 12px;font-weight: bold;color:red;">CLUB: </strong>&nbsp; &nbsp;{{ $profile->club }}</p>
                 <p><strong style="font-size: 12px;font-weight: bold;color:red;">POSITION: </strong>&nbsp; &nbsp;{{ $profile->position }}</p>
                 <p><strong style="font-size: 12px;font-weight: bold;color:red;">CLUB ACHIEVEMENTS:</strong>&nbsp; &nbsp;{{ $profile->c_achievements }}</p>
                 <p><strong style="font-size: 12px;font-weight: bold;color:red;">FOOTAGE :</strong>&nbsp; &nbsp;{{ $profile->footage }}</p>
                 <p><strong style="font-size: 12px;font-weight: bold;color:red;">HIGHR SCHOOL CONTACTS:</strong>&nbsp; &nbsp;{{ $profile->h_contact }}</p>
-                <p><strong style="font-size: 12px;font-weight: bold;color:red;">ADITIONAL INFORMATION:</strong>&nbsp; &nbsp;{{ $profile->additional_information }}</p>
+                <p><strong style="font-size: 12px;font-weight: bold;color:red;">ADITIONAL INFORMATION:</strong>&nbsp; &nbsp;{{ $profile->additional_information }}</p> -->
+                <table>
+                    <tr>
+                        <td>
+                        <p style="position: relative; top: -8px;padding-left: 20px;font-size: 12px;font-weight: bold;color:red;">CLUB: </p>
+                        <p style="position: relative; top: 10px;padding-left: 20px;font-size: 12px;font-weight: bold;color:red;">POSITION: </p>
+                        <p style="position: relative; top: 30px;padding-left: 20px;font-size: 12px;font-weight: bold;color:red;">ACHIEVEMENTS:</p>
+                        <p style="position: relative; top: 115px;padding-left: 20px;font-size: 12px;font-weight: bold;color:red;">FOOTAGE :  <strong style="color:black;"> {{ $profile->footage }} </strong></p>
+                        <p style="position: relative; top: 120px;padding-left: 20px;font-size: 12px;font-weight: bold;color:red;width:190px;">HIGHR SCHOOL CONTACTS: <strong style="color:black;"> {{ $profile->h_contact }} </strong> </p>
+                        <p style="position: relative; top: 130px;padding-left: 20px;font-size: 12px;font-weight: bold;color:red;">ADITIONAL INFORMATION:<strong style="color:black;"> {{ $profile->additional_information }} </strong></p>
+                       </td>
+                        <td>
+                        <p style="position: relative; top: -45px;">{{ $profile->club }}</p>
+                        <p style="position: relative; top: -51px;">{{ $profile->position }}</p>
+                        <p style="position: relative; top: -41px;">{{ $profile->c_achievements }}</p>
+                        </td>
+                        
+                    </tr>
+                </table>
             </td>
         </tr>
     </table>
