@@ -32,6 +32,9 @@
         </td>
     </tr>
     </table>
+    <table>
+        
+    </table>
     <h4 style="margin-top: -29px; color: red;margin-left:200px;">
                 <span style="margin-top: -35px;margin-left:90px; border-bottom: 3px solid black; display: inline-block;">Personal</span>
     </h4>
@@ -41,7 +44,7 @@
             <th style="padding-left: 20px;font-size: 16px;text-align: justify;">{{ $profile->full_name }}</th>
         </tr>
         <tr>
-            <th style="padding-left: 20px;font-size: 12px;width:80px;font-weight: bold;margin: 2;color:red;">GOALS: </th>
+            <th style="padding-left: 20px;font-size: 12px;width:80px;font-weight: bold;margin: 2;color:red;vertical-align: top;">GOALS: </th>
             <th style="padding-left: 20px;font-size: 16px;width:540px;text-align: justify;">{{ $profile->goals }} </th>
         </tr>
         <tr>
@@ -73,12 +76,32 @@
             <th style="padding-left: 20px;font-size: 16px;width:80px;text-align: justify;">{!! str_replace(',', '<br>', $profile->parents) !!}</th>
         </tr>
         </table>
+        <table>
+            <tr>
+                    <th>
+                        <table>
+                            <tr>
+                            <th style="color: red;padding-left: 120px;">ACADEMICS</th>
+                            <h2 style="border-bottom: 2px solid black;margin-left:-100px;width:100px;margin-top:40px;"></h2>
+                            </tr>
+                        </table>
+                   </th>
+                <th>
+                       <table>
+                            <tr>
+                            <th style="color: red;padding-left: 220px;">ATHLETICS</th>
+                            <h2 style="border-bottom: 2px solid black;margin-left:-100px;width:100px;margin-top:40px;"></h2>
+                            </tr>
+                        </table>
+                </th>
+            </tr>
+        </table>
         
-    <table style="margin-top:60px;">
+    <table >
         <tr>
             <th>
-            <h2 style="color: red;padding-left: 100px;">ACADEMICS</h2>
-            <h2 style="border-bottom: 2px solid black;margin-left:130px;width:150px;margin-top:-20px;"></h2>
+            <!-- <h2 style="color: red;padding-left: 100px;">ACADEMICS</h2>
+            <h2 style="border-bottom: 2px solid black;margin-left:130px;width:150px;margin-top:-20px;"></h2> -->
                <table>
                  
                     <tr>
@@ -104,12 +127,12 @@
               </table>
             </th>
             <th>   
-            <h2 style="color: red;padding-left: 60px;">ATHLETICS</h2>
-            <h2 style="border-bottom: 2px solid black;margin-left:140px;width:150px;margin-top:-20px;"></h2>
+            <!-- <h2 style="color: red;padding-left: 60px;">ATHLETICS</h2>
+            <h2 style="border-bottom: 2px solid black;margin-left:140px;width:150px;margin-top:-20px;"></h2> -->
                 <table>
                     <tr>
-                        <th style="padding-left: 40px;font-size: 12px;width:20px;font-weight: bold;margin: 2;color:red;text-align: left;">CLUB:</th>
-                        <th style="font-size: 16px;width:130px;text-align: left;">{{ $profile->club }}</th>
+                        <th style="padding-left: 40px;font-size: 12px;width:20px;font-weight: bold;margin: 2;color:red;text-align: left;vertical-align: top;">CLUB:</th>
+                        <th style="font-size: 16px;width:130px;text-align: left;vertical-align: top;">{{ $profile->club }}</th>
                     </tr>
                     <tr>
                         <th style="padding-left: 40px;font-size: 12px;width:20px;font-weight: bold;margin: 2;color:red;text-align: left;">POSITION: </th>
