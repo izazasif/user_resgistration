@@ -118,7 +118,7 @@
         </table>   
         <table >
             <tr >
-                <th>
+                <th style="width: 80px;">
                     <table>
                         
                             <tr>
@@ -143,11 +143,11 @@
                             </tr>
                     </table>
                 </th>
-                <th>   
+                <th style="width: 20px;">   
                     <table>
                         <tr>
                             <th style="padding-left: 20px; font-size: 12px; width: 20px;  margin:0; color: #990000; text-align: left; vertical-align: top;">CLUB:</th>
-                            <th style="padding-left:-80px;font-size: 16px; width: 160px; text-align: justify; vertical-align: top;">{{ $profile->club }}</th>
+                            <th style="padding-left:-70px;font-size: 14px; width: 160px; text-align: justify; vertical-align: top;">{{ $profile->club }}</th>
                         </tr>
                         <tr>
                             <th style="padding-left: 20px;font-size: 12px;width:20px;margin: 0;color:#990000;text-align: left;vertical-align: top;">POSITION: </th>
