@@ -121,10 +121,10 @@
                 <th>
                     <table>
                         
-                    <tr>
-            <th style="padding-left: 20px; font-size: 12px; width: 80px; font-weight: bold; margin: 2; color: #990000; vertical-align: top;">HIGH SCHOOL:</th>
-            <th style="padding-left: 20px; font-size: 16px; width: 160px; text-align: justify; vertical-align: top;">{{ $profile->h_school }}</th>
-        </tr>
+                            <tr>
+                                <th style="padding-left: 20px; font-size: 12px; width: 80px; font-weight: bold; margin: 2; color: #990000; vertical-align: top;">HIGH SCHOOL:</th>
+                                <th style="padding-left: 20px; font-size: 16px; width: 160px; text-align: justify; vertical-align: top;">{{ $profile->h_school }}</th>
+                            </tr>
                             <tr>
                                 <th style="padding-left: 20px;font-size: 12px;width:80px;font-weight: bold;margin: 2;color:#990000;vertical-align: top;">GPA: </th>
                                 <th style="padding-left: 20px;font-size: 16px;width:80px;text-align: justify;">{{ $profile->gpa }} </th>
@@ -145,10 +145,10 @@
                 </th>
                 <th>   
                     <table>
-                    <tr>
-            <th style="padding-left: 20px; font-size: 12px; width: 20px; font-weight: bold; margin: 2; color: #990000; text-align: left; vertical-align: top;">CLUB:</th>
-            <th style="font-size: 16px; width: 130px; text-align: justify; vertical-align: top;">{{ $profile->club }}</th>
-        </tr>
+                        <tr>
+                            <th style="padding-left: 20px; font-size: 12px; width: 20px; font-weight: bold; margin: 2; color: #990000; text-align: left; vertical-align: top;">CLUB:</th>
+                            <th style="font-size: 16px; width: 130px; text-align: justify; vertical-align: top;">{{ $profile->club }}</th>
+                        </tr>
                         <tr>
                             <th style="padding-left: 20px;font-size: 12px;width:20px;font-weight: bold;margin: 2;color:#990000;text-align: left;vertical-align: top;">POSITION: </th>
                             <th style="font-size: 16px;width:80px;text-align: justify;">{{ $profile->position }} </th>
