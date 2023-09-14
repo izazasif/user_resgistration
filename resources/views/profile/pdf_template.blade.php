@@ -122,23 +122,23 @@
                     <table>
                         
                             <tr>
-                                <th style="padding-left: 20px; font-size: 12px; width: 80px; font-weight: bold; margin: 2; color: #990000; vertical-align: top;">HIGH SCHOOL:</th>
+                                <th style="padding-left: 20px; font-size: 12px; width: 80px;  margin: 2; color: #990000; vertical-align: top;">HIGH SCHOOL:</th>
                                 <th style="padding-left: 20px; font-size: 16px; width: 160px; text-align: justify; vertical-align: top;">{{ $profile->h_school }}</th>
                             </tr>
                             <tr>
-                                <th style="padding-left: 20px;font-size: 12px;width:80px;font-weight: bold;margin: 2;color:#990000;vertical-align: top;">GPA: </th>
+                                <th style="padding-left: 20px;font-size: 12px;width:80px;margin: 2;color:#990000;vertical-align: top;">GPA: </th>
                                 <th style="padding-left: 20px;font-size: 16px;width:80px;text-align: justify;">{{ $profile->gpa }} </th>
                             </tr>
                             <tr>
-                                <th style="padding-left: 20px;font-size: 12px;width:80px;font-weight: bold;margin: 2;color:#990000;vertical-align: top;">ACT:</th>
+                                <th style="padding-left: 20px;font-size: 12px;width:80px;margin: 2;color:#990000;vertical-align: top;">ACT:</th>
                                 <th style="padding-left: 20px;font-size: 16px;width:80px;text-align: justify;">{{ $profile->act }}</th>
                             </tr>
                             <tr>
-                                <th style="padding-left: 20px;font-size: 12px;width:80px;font-weight: bold;margin: 2;color:#990000;vertical-align: top;">MAJOR:</th>
+                                <th style="padding-left: 20px;font-size: 12px;width:80px;margin: 2;color:#990000;vertical-align: top;">MAJOR:</th>
                                 <th style="padding-left: 20px;font-size: 16px;width:80px;text-align: justify;">{{ $profile->major }}</th>
                             </tr>
                             <tr>
-                                <th style="padding-left: 20px;font-size: 12px;width:80px;font-weight: bold;margin: 2;color:#990000;vertical-align: top;">ACHIEVEMENTS:</th>
+                                <th style="padding-left: 20px;font-size: 12px;width:80px;margin: 2;color:#990000;vertical-align: top;">ACHIEVEMENTS:</th>
                                 <th style="padding-left: 20px;font-size: 16px;width:80px;text-align: justify;">{{ $profile->achievements }}</th>
                             </tr>
                     </table>
@@ -146,15 +146,15 @@
                 <th>   
                     <table>
                         <tr>
-                            <th style="padding-left: 20px; font-size: 12px; width: 20px; font-weight: bold; margin: 2; color: #990000; text-align: left; vertical-align: top;">CLUB:</th>
-                            <th style="font-size: 16px; width: 130px; text-align: justify; vertical-align: top;">{{ $profile->club }}</th>
+                            <th style="padding-left: 20px; font-size: 12px; width: 20px;  margin: 2; color: #990000; text-align: left; vertical-align: top;">CLUB:</th>
+                            <th style="padding-left:-80px;font-size: 16px; width: 160px; text-align: justify; vertical-align: top;">{{ $profile->club }}</th>
                         </tr>
                         <tr>
-                            <th style="padding-left: 20px;font-size: 12px;width:20px;font-weight: bold;margin: 2;color:#990000;text-align: left;vertical-align: top;">POSITION: </th>
+                            <th style="padding-left: 20px;font-size: 12px;width:20px;margin: 2;color:#990000;text-align: left;vertical-align: top;">POSITION: </th>
                             <th style="font-size: 16px;width:80px;text-align: justify;">{{ $profile->position }} </th>
                         </tr>
                         <tr>
-                            <th style="padding-left: 20px;font-size: 12px;width:20px;font-weight: bold;margin: 2;color:#990000;text-align: left;vertical-align: top;">ACHIEVEMENTS:</th>
+                            <th style="padding-left: 20px;font-size: 12px;width:20px;margin: 2;color:#990000;text-align: left;vertical-align: top;">ACHIEVEMENTS:</th>
                             <th style="font-size: 16px;width:130px;text-align: justify;vertical-align: top;">{{ $profile->c_achievements  }}</th>
                         </tr>
                             <p style="padding-left: 20px;font-size: 12px;font-weight: bold;color:#990000;margin: 2;">FOOTAGE :  <strong style="color:black;text-align: justify;"> {{ $profile->footage }} </strong></p>
