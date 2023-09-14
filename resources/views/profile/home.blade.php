@@ -66,6 +66,15 @@
                                 </div>
 
                                 <div class="form-group">
+                                    <label for="exampleInputEmail1" class="required">  Class </label>
+                                    <input type="text" name="class" class="form-control" id="exampleInputEmail1"
+                                        placeholder="class" value="{{ old('class') }}">
+                                    @if ($errors->has('class'))
+                                        <span class="text-danger">{{ $errors->first('class') }}</span>
+                                    @endif
+                                </div>
+
+                                <div class="form-group">
                                     <label for="exampleInputEmail1" class="required"> Goals </label>
                                     <input type="text" name="goals" class="form-control" id="exampleInputEmail1"
                                         placeholder="goals" value="{{ old('goals') }}">
@@ -204,6 +213,16 @@
                                         <span class="text-danger">{{ $errors->first('club') }}</span>
                                     @endif
                                 </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1"> Jersey </label>
+                                    <input type="text" name="jersey" class="form-control" id="exampleInputEmail1"
+                                        placeholder="jersey" value="{{ old('jersey') }}" required>
+                                    @if ($errors->has('jersey'))
+                                        <span class="text-danger">{{ $errors->first('jersey') }}</span>
+                                    @endif
+                                </div>
+
 
                                 <div class="form-group">
                                     <label for="exampleInputEmail1" class="required"> Position </label>

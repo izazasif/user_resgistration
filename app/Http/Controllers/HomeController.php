@@ -102,6 +102,8 @@ class HomeController extends Controller
         $data = new Profile_info();
 
         $data->full_name = $request->full_name;
+        
+        $data->class = $request->class;
 
         if($request->image !== null) 
         {
@@ -132,6 +134,7 @@ class HomeController extends Controller
         $data->major = $request->major;
         $data->achievements = $request->achievements;
         $data->club = $request->club;
+        $data->joursey = $request->jersey;
         $data->position = $request->position;
         $data->c_achievements = $request->c_achievements;
         $data->footage = $request->footage;
@@ -171,6 +174,7 @@ class HomeController extends Controller
         $user = Profile_info::where('user_id',$id)->first();
         if($user){
             $user->full_name = $request->full_name;
+            $user->class = $request->class;
         if($request->image !== null) 
         {
             $profile_picture = date('YmdHis') . "_" . mt_rand(1, 999999) . "." . $request->file('image')->getClientOriginalExtension();
@@ -198,6 +202,7 @@ class HomeController extends Controller
             $user->major = $request->major;
             $user->achievements = $request->achievements;
             $user->club = $request->club;
+            $user->joursey = $request->jersey;
             $user->position = $request->position;
             $user->c_achievements = $request->c_achievements;
             $user->footage = $request->footage;

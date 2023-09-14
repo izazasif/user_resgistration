@@ -11,9 +11,9 @@ class Profile_info extends Model
 
     protected $table = 'profile_infos';
     protected $fillable = [
-     'full_name','user_id','goals','height','weight',
+     'full_name','class','user_id','goals','height','weight',
      'dob','address','phone_number','email','parents','image',
-     'h_school','gpa','act','major','achievements','club','position',
+     'h_school','gpa','act','major','achievements','club','joursey','position',
      'c_achievements','footage','h_contact','additional_information',
     ];
     public function user()

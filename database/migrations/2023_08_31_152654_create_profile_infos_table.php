@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('profile_infos', function (Blueprint $table) {
             $table->id();
             $table->string('full_name')->nullable();
+            $table->string('class')->nullable();
             $table->foreignId('user_id');
             $table->text('goals')->nullable();
             $table->string('height')->nullable();
@@ -30,6 +31,7 @@ return new class extends Migration
             $table->string('major')->nullable();
             $table->text('achievements')->nullable();
             $table->string('club')->nullable();
+            $table->string('joursey')->nullable();
             $table->string('position')->nullable();
             $table->text('c_achievements')->nullable();
             $table->string('footage')->nullable();
