@@ -66,40 +66,40 @@
     <table style="margin-top:-140px;">
         <tr>
             <th style="text-align: left;padding-left: 20px;font-size: 15px;width:80px;font-weight: bold;margin: 6;color:#990000;">Full Name:</th>
-            <th style="padding-left: 55px;font-size: 16px;font-weight: normal;text-align: justify;">{{ $profile->full_name }}</th>
+            <th style="padding-left: 60px;font-size: 16px;font-weight: normal;text-align: justify;">{{ $profile->full_name }}</th>
         </tr>
         <tr>
             <th style="text-align: left;padding-left: 20px;font-size: 15px;width:80px;font-weight: bold;margin: 6;color:#990000;vertical-align: top;">Goals: </th>
-            <th style="padding-left: 55px;font-size: 16px;font-weight: normal;width:540px;text-align: justify;">{{ $profile->goals }} </th>
+            <th style="padding-left: 60px;font-size: 16px;font-weight: normal;width:540px;text-align: justify;">{{ $profile->goals }} </th>
         </tr>
         <tr>
             <th style="text-align: left;padding-left: 20px;font-size: 15px;width:80px;font-weight: bold;margin: 6;color:#990000;">Height:</th>
-            <th style="padding-left: 55px;font-size: 16px;font-weight: normal;width:80px;text-align: justify;">{{ $profile->height }}</th>
+            <th style="padding-left: 60px;font-size: 16px;font-weight: normal;width:80px;text-align: justify;">{{ $profile->height }}</th>
         </tr>
         <tr>
             <th style="text-align: left;padding-left: 20px;font-size: 15px;width:80px;font-weight: bold;margin: 6;color:#990000;">Weight:</th>
-            <th style="padding-left: 55px;font-size: 16px;font-weight: normal;width:80px;text-align: justify;">{{ $profile->weight }}</th>
+            <th style="padding-left: 60px;font-size: 16px;font-weight: normal;width:80px;text-align: justify;">{{ $profile->weight }}</th>
         </tr>
         <tr>
             <th style="text-align: left;padding-left: 20px;font-size: 15px;width:80px;font-weight: bold;margin: 6;color:#990000;">DOB:</th>
-            <th style="padding-left: 55px;font-size: 16px;font-weight: normal;width:80px;text-align: justify;">{{ Carbon\Carbon::parse($profile->dob)->format('j- M-Y') }}</th>
+            <th style="padding-left: 60px;font-size: 16px;font-weight: normal;width:80px;text-align: justify;">{{ Carbon\Carbon::parse($profile->dob)->format('j- M-Y') }}</th>
         </tr>
         <tr>
             <th style="text-align: left;padding-left: 20px;font-size: 15px;width:80px;font-weight: bold;margin: 6;color:#990000;">Address:</th>
-            <th style="padding-left: 55px;font-size: 16px;font-weight: normal;width:80px;text-align: justify;">{{ $profile->address }}</th>
+            <th style="padding-left: 60px;font-size: 16px;font-weight: normal;width:80px;text-align: justify;">{{ $profile->address }}</th>
         </tr>
         <tr>
             <th style="text-align: left;padding-left: 20px;font-size: 15px;width:80px;font-weight: bold;margin: 6;color:#990000;">Email:</th>
-            <th style="padding-left: 55px;font-size: 16px;font-weight: normal;width:80px;text-align: justify;text-decoration: underline;">{{ $profile->email }}</th>
-            <!-- <p style="border-bottom: 2px solid black;margin-left:-690px;width:55px;margin-top:40px;"></p> -->
+            <th style="padding-left: 60px;font-size: 16px;font-weight: normal;width:80px;text-align: justify;text-decoration: underline;">{{ $profile->email }}</th>
+            <!-- <p style="border-bottom: 2px solid black;margin-left:-690px;width:60px;margin-top:40px;"></p> -->
         </tr>
         <tr>
             <th style="text-align: left;padding-left: 20px;font-size: 15px;width:80px;font-weight: bold;margin: 6;color:#990000;">Phone:</th>
-            <th style="padding-left: 55px;font-size: 16px;font-weight: normal;width:80px;text-align: justify;">{{ $profile->phone_number }}</th>
+            <th style="padding-left: 60px;font-size: 16px;font-weight: normal;width:80px;text-align: justify;">{{ $profile->phone_number }}</th>
         </tr>
         <tr>
             <th style="text-align: left;padding-left: 20px;font-size: 16px;width:80px;font-weight: bold;margin: 6;color:#990000;vertical-align: top;">Parents:</th>
-            <th style="padding-left: 55px;font-size: 16px;font-weight: normal;width:80px;text-align: justify;">{!! str_replace(',', '<br>', $profile->parents) !!}</th>
+            <th style="padding-left: 60px;font-size: 16px;font-weight: normal;width:80px;text-align: justify;">{!! str_replace(',', '<br>', $profile->parents) !!}</th>
         </tr>
         </table>
         <table>
@@ -171,7 +171,7 @@
                         </tr>
                         <tr>
                             <th style="padding-left: 70px;font-size: 15px;width:10px;margin: 3;color:#990000;text-align: left;vertical-align: top;">Achievements:</th>
-                            <th style="margin-left: -40px!important;font-size: 16px;width:70px;text-align: left;vertical-align: top;font-weight: normal;">{{ $profile->c_achievements  }}</th>
+                            <th style="padding-left: 20px;font-size: 16px;width:70px;text-align: left;vertical-align: top;font-weight: normal;">{{ $profile->c_achievements  }}</th>
                         </tr>
                             <p style="padding-left: 67px;font-size: 15px;font-weight: bold;color:#990000;margin: 3;">Video Footage :  <strong style="color:black;text-align: justify;font-size: 16px;font-weight: normal;text-decoration: underline;"> {{ $profile->footage }} </strong></p>
                             <p style="padding-left: 67px;font-size: 15px;font-weight: bold;color:#990000;width:190px;margin: 3;">Club/High School Contacts: <strong style="line-height: 1.4;font-size: 16px;color:black;text-align: justify;font-weight: normal;"> {{ $profile->h_contact }} </strong> </p>
@@ -180,6 +180,9 @@
                 </th>
             </tr>
         </table>
+        <br>
+        <br>
+        <div style="height: 30px;"></div>
     </div>
 </body>
 </html>
