@@ -30,17 +30,14 @@
             <img class="brand" src="{{ public_path('logo.png') }}" style="height: 140px;width:130px;margin-top: -120px;" alt="bootstraper logo">
             
         </td>
-        <?php
-        $full_name = $profile->full_name;
-        $first_word = strtok($full_name, ' ');
-        ?>
+        
         <img class="brand" src="{{ public_path('logo2.png') }}" style="height: 70px;margin-top: 105px;margin-left:-25px;" alt="bootstraper logo">
         <td style="vertical-align: top; padding-left: 30px;">
-            <p style="margin-top: 20px; height: 70px; width: 167px; font-size: 50px;margin-left:55px;">
-                <strong>{{ $first_word }}</strong>
+            <p style="margin-top: 20px; height: 70px; width: 167px; font-size: 40px;margin-left:55px;">
+                <strong>{{ $profile->full_name }}</strong>
             </p>
             <p style="margin-top: -60px;font-size: 20px;width:120px;font-weight: bold;margin-left:55px;">
-            class of {{ $profile->class }}
+            Class of {{ $profile->class }}
             </p>
             <p style="margin-top: -10px;font-size: 20px;width:80px;font-weight: bold;margin-left:55px;">
             {{ $profile->position }}
