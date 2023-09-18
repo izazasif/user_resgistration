@@ -32,8 +32,8 @@
         </td>
         
         <img class="brand" src="{{ public_path('logo2.png') }}" style="height: 70px;margin-top: 105px;margin-left:-25px;" alt="bootstraper logo">
-        <td style="vertical-align: top; padding-left: 30px;">
-            <p style="margin-top: 20px; height: 70px; width: 167px; font-size: 40px;margin-left:55px;">
+        <td style="vertical-align: top;">
+            <p style="margin-top: 20px; height: 70px; width: 270px; font-size: 30px;margin-left:55px;">
                 <strong>{{ $profile->full_name }}</strong>
             </p>
             <p style="margin-top: -60px;font-size: 20px;width:120px;font-weight: bold;margin-left:55px;">
@@ -47,7 +47,7 @@
             </p>
         </td>
         <td>
-            <div style="border: 2px solid #990000;height: auto;margin-left:80px;margin-top:15px;" >
+            <div style="border: 2px solid #990000;height: auto;margin-left:10px;margin-top:15px;" >
             <img class="brand" src="{{ public_path('/app/' . $profile->image) }}" style="height: 250px; width:200px;" alt="bootstraper logo">
             </div>
            
@@ -57,7 +57,7 @@
     <table>
         
     </table>
-    <h4 style="margin-top: -19px; color: #990000;margin-left:200px;font-size: 26px;">
+    <h4 style="margin-top: -19px; color: #990000;margin-left:170px;font-size: 26px;">
                 <span style="margin-top: -75px;margin-left:90px; border-bottom: 3px solid black; display: inline-block;">Personal</span>
     </h4>
     <table style="margin-top:-140px;">
